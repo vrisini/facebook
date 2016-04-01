@@ -5,12 +5,36 @@
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+        Anirban Team
     </author>
     <content src="index.html" />
+	 <preference name="permissions" value="none" />
+    <preference name="phonegap-version" value="cli-5.2.0" />
+    <preference name="orientation" value="default" />
+    <preference name="EnableViewportScale" value="false"/>
+    <preference name="target-device" value="universal" />
+    <gap:plugin name="org.apache.cordova.battery-status"/>
+    <preference name="Orientation" value="portrait"/>
+    <gap:plugin name="org.apache.cordova.camera"/>
+    <gap:plugin name="cordova-plugin-battery-status" source="npm" />
+    <gap:plugin name="cordova-plugin-camera" source="npm" />
+    <preference name="fullscreen" value="true" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <preference name="android-minSdkVersion" value="7" />
     <plugin name="cordova-plugin-whitelist" version="1" />     
 	
     <access origin="*" />
+	<access origin="facebook.com" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
